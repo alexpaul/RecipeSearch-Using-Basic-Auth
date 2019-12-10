@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		575D137223A005AD00F519A3 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575D137123A005AD00F519A3 /* Secrets.swift */; };
 		5772B7A2239FE136000BB563 /* NetworkHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5772B7A1239FE136000BB563 /* NetworkHelperTests.swift */; };
 		57E98677239F3A8D002C7C7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E98676239F3A8D002C7C7B /* AppDelegate.swift */; };
 		57E98679239F3A8D002C7C7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E98678239F3A8D002C7C7B /* SceneDelegate.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		575D137123A005AD00F519A3 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		5772B7A1239FE136000BB563 /* NetworkHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelperTests.swift; sourceTree = "<group>"; };
 		57E98673239F3A8D002C7C7B /* RecipeSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57E98676239F3A8D002C7C7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		575D137023A0054800F519A3 /* Secrets */ = {
+			isa = PBXGroup;
+			children = (
+				575D137123A005AD00F519A3 /* Secrets.swift */,
+			);
+			path = Secrets;
+			sourceTree = "<group>";
+		};
 		57E9866A239F3A8D002C7C7B = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +102,7 @@
 				57E986A3239F3B18002C7C7B /* Views */,
 				57E986A1239F3AF2002C7C7B /* Controllers */,
 				57E9869B239F3AC5002C7C7B /* Extensions */,
+				575D137023A0054800F519A3 /* Secrets */,
 				57E986A0239F3ADA002C7C7B /* Supporting Files */,
 				57E98684239F3A8F002C7C7B /* Info.plist */,
 			);
@@ -262,6 +273,7 @@
 			files = (
 				57E9869F239F3AC5002C7C7B /* UIImageView+Extensions.swift in Sources */,
 				57E9869D239F3AC5002C7C7B /* NetworkHelper.swift in Sources */,
+				575D137223A005AD00F519A3 /* Secrets.swift in Sources */,
 				57E9867B239F3A8D002C7C7B /* RecipeSearchController.swift in Sources */,
 				57E9869E239F3AC5002C7C7B /* AppError.swift in Sources */,
 				57E98677239F3A8D002C7C7B /* AppDelegate.swift in Sources */,
