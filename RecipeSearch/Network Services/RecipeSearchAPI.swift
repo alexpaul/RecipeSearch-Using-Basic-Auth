@@ -13,6 +13,8 @@ struct RecipeSearchAPI {
   static func fetchRecipe(for searchQuery: String,
                           completion: @escaping (Result<[Recipe], AppError>) -> ()) {
     
+    let searchQuery = searchQuery.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? "tacos"
+    
     // using string interpolation to build endpoint url
     let recipeEndpointURL = "https://api.edamam.com/search?q=\(searchQuery)&app_id=\(SecretKey.appId)&app_key=\(SecretKey.appkey)&from=0&to=50"
     
@@ -33,8 +35,11 @@ struct RecipeSearchAPI {
         do {
           let searchResults = try JSONDecoder().decode(RecipeSearch.self, from: data)
           
-          // 1. TODO: use searchResults to create an array of recipes
-          // 2. TODO: capture the array of recipes in the completion handler
+          // 1. use searchResults to create an array of recipes
+          let recipes = searchResults.hits.map { $0.recipe }
+          
+          // 2. capture the array of recipes in the completion handler
+          completion(.success(recipes))
           
         } catch {
           completion(.failure(.decodingError(error)))
