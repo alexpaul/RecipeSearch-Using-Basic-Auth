@@ -54,7 +54,7 @@ class RecipeSearchAPITests: XCTestCase {
         XCTAssertEqual(recipes.count, expectedRecipesCount)
       }
     }
-    wait(for: [exp], timeout: 5.0)
+    wait(for: [exp], timeout: 10.0)
   }
   
   
