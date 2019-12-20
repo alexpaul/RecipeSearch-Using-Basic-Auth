@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="42u-Zs-UWy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="42u-Zs-UWy">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H3u-3l-ooo">
-                                <rect key="frame" x="0.0" y="196" width="414" height="700"/>
+                                <rect key="frame" x="0.0" y="144" width="414" height="752"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="recipeCell" rowHeight="340" id="RlQ-Gi-YYI" customClass="RecipeCell" customModule="RecipeSearch" customModuleProvider="target">
@@ -31,25 +31,19 @@
                                                 </imageView>
                                                 <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q75-Qn-jd3">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="340"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4NG-gx-aFw">
-                                                            <rect key="frame" x="20" y="154.5" width="374" height="31.5"/>
-                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <constraints>
-                                                        <constraint firstItem="4NG-gx-aFw" firstAttribute="centerX" secondItem="q75-Qn-jd3" secondAttribute="centerX" id="Lwn-mi-8ZJ"/>
-                                                        <constraint firstAttribute="trailing" secondItem="4NG-gx-aFw" secondAttribute="trailing" constant="20" id="bSZ-lt-F55"/>
-                                                        <constraint firstItem="4NG-gx-aFw" firstAttribute="leading" secondItem="q75-Qn-jd3" secondAttribute="leading" constant="20" id="lCE-gp-HPf"/>
-                                                        <constraint firstItem="4NG-gx-aFw" firstAttribute="centerY" secondItem="q75-Qn-jd3" secondAttribute="centerY" id="xFK-kE-I5V"/>
-                                                    </constraints>
                                                 </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4NG-gx-aFw">
+                                                    <rect key="frame" x="28" y="154.5" width="358" height="31.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="TOz-7d-3VK" firstAttribute="top" secondItem="Ust-Oo-Vqo" secondAttribute="top" id="1ay-oc-cSE"/>
+                                                <constraint firstItem="4NG-gx-aFw" firstAttribute="trailing" secondItem="Ust-Oo-Vqo" secondAttribute="trailingMargin" constant="8" id="6Fj-C1-cSy"/>
+                                                <constraint firstItem="4NG-gx-aFw" firstAttribute="leading" secondItem="Ust-Oo-Vqo" secondAttribute="leadingMargin" constant="8" id="9f0-EI-XOK"/>
                                                 <constraint firstAttribute="bottom" secondItem="TOz-7d-3VK" secondAttribute="bottom" id="DC3-Vw-s4i"/>
                                                 <constraint firstAttribute="trailing" secondItem="TOz-7d-3VK" secondAttribute="trailing" id="Dya-Je-NB2"/>
                                                 <constraint firstAttribute="trailing" secondItem="q75-Qn-jd3" secondAttribute="trailing" id="hTT-ls-jFG"/>
@@ -59,6 +53,10 @@
                                                 <constraint firstItem="q75-Qn-jd3" firstAttribute="top" secondItem="Ust-Oo-Vqo" secondAttribute="top" id="tsR-kN-GdT"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstItem="4NG-gx-aFw" firstAttribute="centerY" secondItem="RlQ-Gi-YYI" secondAttribute="centerY" id="12Y-Ny-mfb"/>
+                                            <constraint firstItem="4NG-gx-aFw" firstAttribute="centerX" secondItem="RlQ-Gi-YYI" secondAttribute="centerX" id="Mv1-dh-Hqf"/>
+                                        </constraints>
                                         <connections>
                                             <outlet property="recipeImageView" destination="TOz-7d-3VK" id="4UL-aF-ZbC"/>
                                             <outlet property="recipeLabel" destination="4NG-gx-aFw" id="bDp-TJ-KEM"/>
@@ -67,7 +65,7 @@
                                 </prototypes>
                             </tableView>
                             <searchBar contentMode="redraw" placeholder="search for recipes" translatesAutoresizingMaskIntoConstraints="NO" id="In3-zT-zb5">
-                                <rect key="frame" x="0.0" y="140" width="414" height="56"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
